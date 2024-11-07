@@ -1,0 +1,248 @@
+:root {
+  --white-: #fff;
+  --black-: #252525;
+  --grey-: #d2d2d2;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.woff') format('woff2'),
+    url('../fonts/Roboto-Bold.woff2') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Light.woff') format('woff2'),
+    url('../fonts/Roboto-Light.woff2') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff') format('woff2'),
+    url('../fonts/Roboto-Regular.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.woff') format('woff2'),
+    url('../fonts/Roboto-Medium.woff2') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+    url('../fonts/Poppins-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+    url('../fonts/Poppins-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+  color: var(--white-);
+}
+body {
+  background: var(--black-);
+  font-family: 'Poppins';
+  color: var(--white-);
+}
+/* Header CSS */
+header {
+  margin-top: 46px;
+}
+header a.nav-link {
+  color: var(--white-);
+  font-family: 'Roboto';
+  font-size: 22px;
+}
+a.nav-link:hover {
+  color: var(--grey-);
+}
+a.nav-link.active {
+  color: var(--white-);
+  font-weight: 600;
+  border: 2px solid var(--grey-);
+  border-radius: 10px;
+  padding: 12px 24px;
+}
+/* Header CSS -- */
+/*Hero-section */
+.hero-section {
+  margin: 60px 0px;
+}
+.hero-section img {
+  width: 100%;
+}
+.hero-deatils h1 {
+  font-family: 'Roboto';
+  font-size: 50px;
+}
+.hero-deatils p {
+  font-size: 18px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+.hero-deatils button {
+  background: transparent;
+  color: var(--white-);
+  border-radius: 10px;
+  padding: 12px 24px;
+  border: 2px solid var(--grey-);
+  font-size: 18px;
+  transition: all 0.5s linear;
+  font-weight: 700;
+}
+.hero-deatils button:hover {
+  background: var(--white-);
+  color: var(--black-);
+}
+/*Hero-section --*/
+/* About Page */
+.about {
+  margin-top: 20px;
+}
+.about i {
+  height: 40px;
+  /* width: 40px; */
+  background: black;
+  padding: 12px;
+}
+.about-head-p {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about h3 {
+  position: relative;
+  font-family: 'Roboto';
+}
+.about h3::before {
+  content: '';
+  height: 4px;
+  width: 20%;
+  background-color: white;
+  position: absolute;
+  border-radius: 10px;
+  bottom: -16px;
+  left: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about li {
+  font-size: 18px;
+}
+/* About Page --*/
+/* Contact Page */
+.contact {
+  width: 40%;
+  margin: 50px auto 0px;
+}
+.contact h1 {
+  position: relative;
+  margin-bottom: 30px;
+}
+.contact h1::before {
+  content: '';
+  height: 4px;
+  width: 40%;
+  background-color: white;
+  position: absolute;
+  border-radius: 10px;
+  bottom: -8px;
+  left: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.icons a i {
+  color: var(--white-);
+  transition: 0.7s ease-in-out;
+  padding: 10px;
+  border: 1px solid transparent;
+}
+.icons a i:hover {
+  color: var(--grey-);
+  border-radius: 50%;
+  border: 1px solid var(--grey-);
+  padding: 10px;
+}
+/* Contact Page -- */
+/* Project Page Start*/
+.projects {
+  margin-top: 50px;
+}
+.projects h1 {
+  position: relative;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.projects h1::before {
+  content: '';
+  height: 4px;
+  width: 10%;
+  background-color: white;
+  position: absolute;
+  border-radius: 10px;
+  bottom: -14px;
+  left: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.projects p {
+  font-size: 14px;
+}
+/* Project Page Start --*/
+/* Meadia Query */
+@media (max-width: 760px) {
+  header {
+    margin-top: 10px;
+  }
+  a.nav-link.active {
+    padding: 4px 12px;
+  }
+  header a.nav-link {
+    font-size: 18px;
+  }
+  .hero-section {
+    margin: 20px 0px;
+  }
+}
+@media (max-width: 560px) {
+  .hero-deatils h1 {
+    font-size: 36px;
+  }
+  .hero-deatils p {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 16px;
+  }
+  .about-head-p {
+    font-size: 14px;
+  }
+  .about li {
+    font-size: 16px;
+  }
+  .contact {
+    width: 90%;
+    margin: 30px auto 0px;
+  }
+}
